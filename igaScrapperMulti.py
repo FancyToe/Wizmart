@@ -1,18 +1,41 @@
-import concurrent.futures
-from htmlFetcher import fetch_html
+import asyncio
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-def extract_links_from_page(my_url):
-    # Fetch html from url and define soup
-    html = fetch_html(my_url)
+
+async def fetch_html(url):
+    # Set up headless browsing
+    options = Options()
+    options.headless = True
+
+    # Set up Chrome driver (adjust path based on your system)
+    driver = webdriver.Chrome(options=options)
+
+    # Open the webpage
+    driver.get(url)
+
+    # Wait for the page to load
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+
+    # Get the page source (HTML)
+    html = driver.page_source
+
+    # Close the browser
+    driver.quit()
+
+    # Return the HTML
+    return html
+
+
+async def extract_links_from_page(my_url):
+    html = await fetch_html(my_url)
     soup = BeautifulSoup(html, 'html.parser')
-
-    # Find all the divs with desired class name
     divs = soup.find_all('div', class_='item-product js-product js-equalized js-addtolist-container js-ga')
 
-    # Extract ProductUrl from every element in divs
     my_links = []
     for div in divs:
         data_product = div['data-product']
@@ -22,42 +45,10 @@ def extract_links_from_page(my_url):
     return my_links
 
 
-def process_page(page_number):
-    url = f"{base_url}{page_number}&pageSize=200"
-    print(url)
-    links = extract_links_from_page(url)
-    return links
+async def main():
+    my_url = 'https://example.com'  # Replace with your desired URL
 
+    links = await extract_links_from_page(my_url)
+    print(links)
 
-base_url = "https://www.iga.net/fr/epicerie_en_ligne/parcourir?page="
-total_pages = 20
-all_links = []
-
-# Create Chrome options with headless mode
-chrome_options = Options()
-chrome_options.add_argument('--headless')
-
-# Create a pool of Chrome drivers with headless option
-driver_pool = [webdriver.Chrome(options=chrome_options) for _ in range(total_pages)]
-
-# Process each page concurrently
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    page_numbers = range(1, total_pages + 1)
-    results = executor.map(process_page, page_numbers)
-
-    # Collect the results
-    for links in results:
-        if not links:
-            break
-        all_links.extend(links)
-
-# Close the Chrome drivers
-for driver in driver_pool:
-    driver.quit()
-
-# Write links to a text file
-with open('links.txt', 'w') as file:
-    for link in all_links:
-        file.write(link + '\n')
-
-print("Links written to links.txt")
+asyncio.run(main())

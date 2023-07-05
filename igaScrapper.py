@@ -26,11 +26,11 @@ all_links = []
 
 while True:
     url = f"{base_url}{page_number}&pageSize=200"
-    print(url)
+    # print(url)
     links = extract_links_from_page(url)
     if not links:
         break
-    page_number += 1
+    page_number += 90
     all_links.extend(links)
 
 with open('links.txt', 'w') as file:
