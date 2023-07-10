@@ -1,0 +1,158 @@
+<div class="item-product js-product js-equalized js-addtolist-container js-ga" data-bind="onceWith: products.createOrUpdate($element.getAttribute('data-product'))" data-product="{'ProductId':'00000_000000005659400293','BrandName':'Nivea','FullDisplayName':'Antisudorifique invisible - noir et blanc','CategoryName':'Déodorants et antisudorifiques','IsAgeRequired':false,'SizeLabel':'','Size':'43 g','ProductUrl':'/fr/produit/antisudorifiqueinvisible---noir-et-blanc/00000_000000005659400293','ProductImageUrl':'https://sbs-prd-cdn-products.azureedge.net/media/image/product/fr/medium/0005659400293.jpg','HasNewPrice':false,'PromotionName':null,'RegularPrice':4.19000,'SalesPrice':3.49000,'CustomerProductComment':null,'PopularityFactor':0.0,'ProductSKU':'0005659400293_00000','RawSKU':null}">
+ <div class="popular-ribbon" data-bind="visible: popularityFactor() != null &amp;&amp; popularityFactor() &gt; 0" style="display:none">
+  <span class="ribbon">
+   Populaire
+  </span>
+ </div>
+ <div class="item-product" data-bind="css: {'is-in-cart': quantity()}">
+  <div class="grid">
+   <div class="grid__item">
+    <div class="media-overlay js-overlay-controls">
+     <a aria-hidden="true" class="js-ga-productimage" href="/fr/produit/antisudorifiqueinvisible---noir-et-blanc/00000_000000005659400293" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_ImageLink_0" role="presentation" tabindex="-1" title="Antisudorifique invisible - noir et blanc">
+      <img class="fluid" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_ProductImage_0" onerror="this.onerror=null; this.src=globalSettings.ProductImages.Small" role="presentation" src="https://sbs-prd-cdn-products.azureedge.net/media/image/product/fr/small/0005659400293.jpg"/>
+     </a>
+     <div class="item-product__overlay item-product__overlay--full-height" data-bind="visible: quantity()" style="display: none;">
+      <div>
+       <span class="item-product__quantity js-product-quantity" data-bind="'text': quantity">
+        NaN
+       </span>
+       Dans votre panier
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="grid__item">
+    <div class="item-product__content push--top">
+     <div class="js-equalized-sub-item push-half--bottom">
+      <div class="item-product__brand push--top" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_BrandNameZone_0">
+       Nivea
+      </div>
+      <h3 class="h4-like text--brand">
+       <a aria-label="Antisudorifique invisible - noir et blanc" class="js-ga-productname" href="/fr/produit/antisudorifiqueinvisible---noir-et-blanc/00000_000000005659400293" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_NavigateTo_0">
+        Antisudorifique invisible - noir et blanc
+       </a>
+      </h3>
+      <div class="item-product__info" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_SizeZone_0">
+       43 g
+      </div>
+     </div>
+     <div class="item-product__prices js-equalized-sub-item2 on-sale" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_ListOfPrices_0">
+      <div class="grid grid--middle">
+       <div class="grid__item push--bottom">
+        <div class="item-product__price--sale">
+         <span class="text--strong">
+          <span class="price text--strong">
+           3,49 $
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="grid__item portable-up--one-half">
+        <div class="item-product__price">
+         <span class="price-amount">
+          4,19 $
+         </span>
+        </div>
+       </div>
+       <div class="grid__item portable-up--one-half">
+        <div class="item-product__info palm--hide">
+         <div class="text--small">
+          8,12 $ / 100 G.
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="grid__item">
+    <div class="item-product__controls">
+     <div class="add-to-cart js-add-to-cart js-tutorial-addtocart">
+      <span class="feedback">
+       Produit ajouté au panier
+      </span>
+      <span class="hidden js-product-id">
+       <input id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToCartButton_0_FldProduct_0" name="body_0$main_1$ProductSearch$GroceryBrowsing$TemplateResult$SearchResultListView$ctrl0$ctl00$ctl00$AddToCartButton$FldProduct" type="hidden" value="00000_000000005659400293"/>
+      </span>
+      <span class="hidden js-product-name">
+       <input id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToCartButton_0_FldProductName_0" name="body_0$main_1$ProductSearch$GroceryBrowsing$TemplateResult$SearchResultListView$ctrl0$ctl00$ctl00$AddToCartButton$FldProductName" type="hidden"/>
+      </span>
+      <span class="hidden js-product-isonpromo">
+       <input id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToCartButton_0_FldProductIsOnPromo_0" name="body_0$main_1$ProductSearch$GroceryBrowsing$TemplateResult$SearchResultListView$ctrl0$ctl00$ctl00$AddToCartButton$FldProductIsOnPromo" type="hidden"/>
+      </span>
+      <div class="controls push-half--bottom">
+       <div class="grid grid--full grid--middle" data-bind="visible: quantity()" style="display: none">
+        <div class="grid__item one-third text--left">
+         <a class="btn btn--dark item-product__overlay-btn js-ga-decrement" data-bind="click: decrement" href="#">
+          <span class="item-product__overlay-btn-label item-product__overlay-minus">
+           <span class="visuallyhidden">
+            -
+           </span>
+          </span>
+         </a>
+        </div>
+        <div class="grid__item one-third text--center">
+         <label class="accessibility" for="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToCartButton_0_TxtNumber_0" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToCartButton_0_TxtQtyLabel_0">
+          Quantité pour :  Antisudorifique invisible - noir et blanc 3,49 $
+         </label>
+         <input class="js-add-to-cart-quantity" data-bind="'value': editedQuantity, 'valueUpdate': 'afterkeydown', 'enterkey': saveEditedQuantity, hasFocus: isBeingEdited, selectAllOnClick: true, event: { blur: saveEditedQuantity }" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToCartButton_0_TxtNumber_0" name="body_0$main_1$ProductSearch$GroceryBrowsing$TemplateResult$SearchResultListView$ctrl0$ctl00$ctl00$AddToCartButton$TxtNumber" type="number" value="1"/>
+        </div>
+        <div class="grid__item one-third text--right">
+         <a class="btn btn--dark item-product__overlay-btn js-ga-increment" data-bind="click: increment, css: { 'is-disabled': isQuantityMaxed }" href="#">
+          <span class="item-product__overlay-btn-label item-product__overlay-plus">
+           <span class="visuallyhidden">
+            +
+           </span>
+          </span>
+         </a>
+        </div>
+       </div>
+       <span class="control control--fluid">
+        <button class="btn btn--dark btn--full-width relative" data-bind="'click': saveEditedQuantity, visible: !quantity()">
+         Ajouter au panier
+        </button>
+       </span>
+      </div>
+     </div>
+     <div class="grid grid--full grid--middle js-product-comment-add-to-list-box" data-bind="visible: quantity() &amp;&amp; isCommentMustVisible()" style="display:none">
+      <div class="grid__item three-quarters text--center">
+       <a class="btn btn--default btn--full-width push-half--bottom item-product__add-to-list js-addtolist-cta relative" data-comment-hyperlink="1" href="/fr/mon_compte/se_connecter?item=%2ffr%2fepicerie_en_ligne%2fparcourir%3fpage%3d38%26pageSize%3d1" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToListButton_0_BtnAddToListCart_0" style="font-size: 12px; padding:11px 10px 12px" title="Ajouter à la liste d'épicerie">
+        <span style="display:inline-block;position:relative;background:inherit;">
+         <span class="js-added-to-list-notification item-product__added-to-list-notification" style="display: none;">
+          <span class="icon icon--check icon--medium text--valid">
+          </span>
+         </span>
+         <span class="icn icn-item-list-icon palm--hide">
+         </span>
+        </span>
+        Ajouter à une liste
+       </a>
+      </div>
+      <div class="grid__item one-quarter js-add-comment-product-btn text--right" data-bind="template: { afterRender: initAddToList }">
+       <button class="btn item-product__overlay-btn js-add-comment-cta push-half--bottom relative" data-bind="css: { 'btn--dark': customerComment() != '' &amp;&amp; customerComment() != null },  click: openComentPopup" title="Commentaire">
+        <span class="item-product__overlay-btn-label">
+         <span class="icn icon-comment-bubble-empty" data-bind="css: { 'icon-comment-bubble-filled': customerComment() != '' &amp;&amp; customerComment() != null, 'icon-comment-bubble-empty ': customerComment() == '' || customerComment() == null }">
+         </span>
+        </span>
+       </button>
+      </div>
+     </div>
+     <div data-bind="visible: !quantity() || !isCommentMustVisible()">
+      <a class="btn btn--default btn--full-width push-half--bottom item-product__add-to-list js-addtolist-cta relative" data-bind="visible: !quantity() || !isCommentMustVisible()" data-comment-hyperlink="0" href="/fr/mon_compte/se_connecter?item=%2ffr%2fepicerie_en_ligne%2fparcourir%3fpage%3d38%26pageSize%3d1" id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToListButton_0_BtnAddToList_0" title="Ajouter à la liste d'épicerie">
+       <span style="display:inline-block;position:relative;background:inherit;">
+        <span class="js-added-to-list-notification item-product__added-to-list-notification" style="display: none;">
+         <span class="icon icon--check icon--medium text--valid">
+         </span>
+        </span>
+        <span class="icn icn-item-list-icon palm--hide">
+        </span>
+       </span>
+       Ajouter à une liste
+      </a>
+     </div>
+     <input id="body_0_main_1_ProductSearch_GroceryBrowsing_TemplateResult_SearchResultListView_ctrl0_ctl00_0_AddToListButton_0_HidCommentVisible_0" name="body_0$main_1$ProductSearch$GroceryBrowsing$TemplateResult$SearchResultListView$ctrl0$ctl00$ctl00$AddToListButton$HidCommentVisible" type="hidden" value="1"/>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
